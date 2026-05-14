@@ -1,0 +1,139 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/*General*/
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.father {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 50px;
+    background-color: hsl(216, 50%, 16%);
+    margin: 100px auto;
+    border-radius: 15px;
+}
+
+/* الحاوية الخاصة بالصورة وتأثير الـ Hover */
+.image-container {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.equilibrium {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5); /* لون Cyan شفاف */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(178, 100%, 50%);
+}
+
+.ether {
+    width: 11px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.clock {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+.creator {
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+
+hr {
+    border: 0.5px solid hsl(215, 32%, 27%);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.creation {
+    color: hsl(215, 51%, 70%);
+}
+
+.creator p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.creator-name:hover, h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
